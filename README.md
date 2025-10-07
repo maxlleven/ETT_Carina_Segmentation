@@ -190,7 +190,7 @@ scikit-learn
 Install all dependencies using:
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ---
