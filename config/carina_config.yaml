@@ -6,7 +6,7 @@ data:
   input_size: 384
 
 model:
-  architecture: "UnetPlusPlus"
+  architecture: "Unet"
   encoder: "resnext101_32x8d"
   encoder_weights: "imagenet"
   activation: "sigmoid"
