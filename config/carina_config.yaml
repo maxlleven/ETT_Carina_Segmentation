@@ -1,0 +1,21 @@
+task: "carina"
+data:
+  base_dir: "./data/carina_v2"
+  fold: 1
+  classes: ["tube"]
+  input_size: 384
+
+model:
+  architecture: "UnetPlusPlus"
+  encoder: "resnext101_32x8d"
+  encoder_weights: "imagenet"
+  activation: "sigmoid"
+
+train:
+  epochs: 1
+  batch_size: 8
+  lr: 0.0001
+  optimizer: "adam"
+  device: "cuda"
+  save_best: true
+  checkpoint_dir: "./results/carina"

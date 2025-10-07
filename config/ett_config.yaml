@@ -1,0 +1,21 @@
+task: "ett"
+data:
+  base_dir: "./data/ett_v2"
+  fold: 1
+  classes: ["tube"]
+  input_size: 384
+
+model:
+  architecture: "UnetPlusPlus"
+  encoder: "resnet101"
+  encoder_weights: "imagenet"
+  activation: "sigmoid"
+
+train:
+  epochs: 1
+  batch_size: 8
+  lr: 0.0001
+  optimizer: "adam"
+  device: "cuda"
+  save_best: true
+  checkpoint_dir: "./results/ett"
