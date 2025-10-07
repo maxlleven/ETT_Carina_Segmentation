@@ -78,7 +78,7 @@ The **U-Net** architecture is a fully convolutional encoder–decoder network de
 It combines low-level spatial features with high-level semantic information through skip connections.
 
 <div align="center">
-    <h4>🩺 U-Net Structure</h4>
+    <h4> U-Net Structure</h4>
 </div>
 
 <p align="center">
@@ -101,13 +101,14 @@ This allows the model to detect:
 
 After segmentation, the **Euclidean distance** between the ETT tip and the Carina center is calculated as:
 
-\[
-d(p,q) = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
-\]
+$$
+d(p, q) = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
+$$
+
 
 where:  
-- \(p = (x_1, y_1)\) → ETT tip location  
-- \(q = (x_2, y_2)\) → Carina location  
+- $p = (x_1, y_1)$ → ETT tip location  
+- $q = (x_2, y_2)$ → Carina location
 
 This metric can be later converted into **centimeters** using pixel spacing information.
 
@@ -124,8 +125,8 @@ This metric can be later converted into **centimeters** using pixel spacing info
 ---
 
 ## 📂 **Repository Structure**
-
-EndotrachealTube_Carina_Segmentation/
+<pre><code>
+ETT_Carina_Segmentation/
 │
 ├── config/
 │ ├── carina_config.yaml # Configuration for Carina segmentation
@@ -155,7 +156,7 @@ EndotrachealTube_Carina_Segmentation/
 │
 ├── requirements.txt # Dependencies
 └── README.md # Project documentation
-
+</code></pre>
 
 ---
 
