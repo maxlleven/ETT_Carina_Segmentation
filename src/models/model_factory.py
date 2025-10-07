@@ -7,7 +7,7 @@ def build_model(config):
     activation = config["model"]["activation"]
     num_classes = len(config["data"]["classes"])
 
-    model = smp.UnetPlusPlus(
+    model = smp.Unet(
         encoder_name=encoder,
         encoder_weights=encoder_weights,
         classes=num_classes,
