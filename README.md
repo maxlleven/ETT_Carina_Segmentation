@@ -36,13 +36,13 @@ Such a system can:
 
 This repository includes the **first four stages** of a full ETT–Carina detection pipeline.
 
-| Stage | Description | Number of Images |
-|--------|--------------|------------------|
-| **1. Load Dataset** | Import and organize X-ray images | 292 |
-| **2. Pre-processing** | Resize, normalize, augment data | 292 |
-| **3. ETT Segmentation** | Detect ETT using U-Net | 292 |
-| **4. Carina Segmentation** | Detect Carina using U-Net | 292 |
-| **5. Distance Calculation** | (To be added) Compute ETT–Carina distance | — |
+| Stage | Description |
+|--------|--------------|
+| **1. Load Dataset** | Import and organize X-ray images |
+| **2. Pre-processing** | Resize, normalize, augment data |
+| **3. ETT Segmentation** | Detect ETT using U-Net |
+| **4. Carina Segmentation** | Detect Carina using U-Net |
+| **5. Distance Calculation** | (To be added) Compute ETT–Carina distance |
 
 ---
 
