@@ -199,7 +199,7 @@ pip install -r requirements.txt
 ## 📂 Data Availability
 
 The raw data supporting the conclusions of this study will be **made available by the authors upon reasonable request**, without undue reservation.  
-Please contact the corresponding author for data access and research collaboration inquiries.
+Please contact the author for data access and research collaboration inquiries.
 
 ---
 
